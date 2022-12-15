@@ -16,7 +16,13 @@ void setup()
 **aquí procesing creará animaciones e interacciónes que le hayamos definido
 **será leido de manera continua hasta que detenegamos nuestro programa
 */
+PFont myFont;
+
 void draw ()
 {
-  createFont();
+  fill(0);
+  myFont = createFont("Georgia", 32);
+  textFont(myFont);
+  textAlign(CENTER, CENTER);
+  text("Hello, World!", width/2, height/2);
 }
